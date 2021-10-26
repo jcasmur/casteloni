@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Http\requests\PizzaStoreRequest;
+use App\Http\Requests\PizzaStoreRequest;
 
 class PizzaController extends Controller
 {
