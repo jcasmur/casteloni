@@ -3,14 +3,18 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-12">
+        <div class="col-md-14">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active" aria-current="page">Orders</li>
                 </ol>
             </nav>
             <div class="card">
-                <div class="card-header">Orders</div>
+                <div class="card-header">Orders
+                <a style="float:right;" href="{{route('pizza.index')}}"><button class="bnt btn-secondary btn-sm" style="margin-left: 5px;">Ver Pizzas</button></a>
+                        <a style="float:right;" href="{{route('pizza.create')}}"><button class="bnt btn-secondary btn-sm">Crear Pizza</button></a>
+    
+                    </div>
 
                 <div class="card-body">
                     <table class="table table-bordered">
