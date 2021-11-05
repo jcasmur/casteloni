@@ -10,18 +10,19 @@
                 <div class="card-body">
                     <ul class="list-group-item">
                         <form action="{{route('frontpage')}}" method="get">
-                            <a href="/">Todas</a>
+                            <a class="list-group-item list-group-item-action" href="/">Todas</a>
                             <input type="submit" value="vegetariana" name="category" class="list-group-item list-group-item-action">
                             <input type="submit" value="novegetariana" name="category" class="list-group-item list-group-item-action">
                             <input type="submit" value="traditional" name="category" class="list-group-item list-group-item-action">
                         </form>
                     </ul>
                 </div>
+
             </div>
         </div>
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Pizzas</div>
+                <div class="card-header">Pizzas ({{count($pizzas)}} pizza)</div>
                 <div class="card-body">
                     <div class="row">
                         @forelse ($pizzas as $pizza)
